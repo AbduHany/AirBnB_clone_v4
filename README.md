@@ -158,6 +158,8 @@ Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twit
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+Abdelrahman Metawei - [Github](https://github.com/AbduHany) / [Twitter](https://twitter.com/AbduuHany)
+Mahmoud Mohey Eldin - [Github](https://github.com/MoodyEG) / [Twitter](https://x.com/Moodyeg2012)
 
 Second part of Airbnb: Joann Vuong
 ## License
