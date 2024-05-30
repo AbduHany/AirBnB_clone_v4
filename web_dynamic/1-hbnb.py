@@ -6,7 +6,7 @@ from models.city import City
 from models.amenity import Amenity
 from models.place import Place
 from os import environ
-from flask import Flask, render_template
+from flask import Flask, render_template  # type: ignore
 import uuid
 
 
@@ -38,7 +38,7 @@ def hbnb():
     places = sorted(places, key=lambda k: k.name)
     cache_id = uuid.uuid4()
 
-    return render_template('0-hbnb.html',
+    return render_template('1-hbnb.html',
                            states=st_ct,
                            amenities=amenities,
                            places=places,
