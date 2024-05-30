@@ -23,3 +23,7 @@ header .logo {
     border-radius: 20px;
     background-color: #cccccc;
 }
+
+#api_status.available {
+    background-color: #ff545f;
+}
