@@ -17,8 +17,7 @@ $(document).ready(function () {
   $.get('http://localhost:5001/api/v1/status/', function (data, status) {
     if (data.status === 'OK') {
       $('div#api_status').addClass('available');
-    }
-    else {
+    } else {
       $('div#api_status').removeClass('available');
     }
   });
@@ -27,11 +26,12 @@ $(document).ready(function () {
     url: 'http://localhost:5001/api/v1/places_search',
     data: '{}',
     headers: {
-        'Content-Type': 'application/json'
+      'Content-Type': 'application/json'
     },
-    success: function(data) {
+    success: function (data) {
       data.sort((a, b) => a.name.localeCompare(b.name));
-      for (let result of data) {
+      for (const result of data) {
+        console.log(result.description);
         const pluralGuest = result.max_guest > 1 ? 's' : '';
         const pluralBedroom = result.number_rooms > 1 ? 's' : '';
         const pluralBathroom = result.number_bathrooms > 1 ? 's' : '';
@@ -42,14 +42,14 @@ $(document).ready(function () {
         </div>
         <div class="information">
           <div class="max_guest">${result.max_guest} Guest${pluralGuest}</div>
-          <div class="number_rooms">${ result.number_rooms } Bedroom${pluralBedroom}</div>
+          <div class="number_rooms">${result.number_rooms} Bedroom${pluralBedroom}</div>
           <div class="number_bathrooms">${result.number_bathrooms} Bathroom${pluralBathroom}</div>
         </div>
         <div class="user">
           <b>Owner:</b> TBD
         </div>
         <div class="description">
-          ${result.description}}
+          ${result.description}
         </div>
       </article>`);
       }
